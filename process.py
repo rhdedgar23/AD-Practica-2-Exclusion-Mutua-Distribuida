@@ -28,7 +28,7 @@ class Process:                   # Descendiente de la clase "object" (default)
     def transmit(self, event):	
         """ invoca al motor para insertar un evento en su agenda """
         self.engine.insertEvent(event)
-        print("Transmite mensaje", event.counter)
+        print("Transmite mensaje en t= ", event.time, "\n")
 
 		
     def receive(self, event):

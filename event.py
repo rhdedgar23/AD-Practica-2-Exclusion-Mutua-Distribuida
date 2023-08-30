@@ -4,17 +4,16 @@ entre las entidades activas de un sistema distribuido """
 
 # ----------------------------------------------------------------------------------------		
 class Event:                   # Descendiente de la clase "object" (default)
-    """ Atributos: "name", "time", "target", "source" y "counter",
+    """ Atributos: "name", "time", "target", y "source",
     contiene tambien un constructor y los metodos que devuelven cada
     uno de los atributos individuales """
     
-    def __init__(self, name, time, target, source, counter):
+    def __init__(self, name, time, target, source):
         """ Construye una instancia con los atributos inicializados """
         self.name   = name
         self.time   = time        
         self.target = target        
         self.source = source
-        self.counter = counter
 
     def getName(self):
         """ Devuelve el nombre del evento """
@@ -31,7 +30,3 @@ class Event:                   # Descendiente de la clase "object" (default)
     def getSource(self):
         """ Devuelve la identidad del proceso que origina el evento """
         return (self.source)
-
-    def getCounter(self):
-        """ Devuelve el valor del contador del evento """
-        return (self.counter)
