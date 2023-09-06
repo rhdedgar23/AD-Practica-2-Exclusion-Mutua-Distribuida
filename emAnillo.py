@@ -1,5 +1,5 @@
 #
-# Implementa la simulacion del problema de Exclusion Mutua usando el modelo de Cliente-Servidor
+# Implementa la simulacion del problema de Exclusion Mutua usando el modelo de anillo
 #
 # Elaboro: Edgar Daniel Rodriguez Herrera
 #

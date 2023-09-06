@@ -47,6 +47,7 @@ class algoritmoExclusionMutua(Model):#se ejecuta por cada proceso/modelo que se 
             else:
                 print("[", self.id, "]: recibi INICIA en t=", self.clock, " \n", "NO Envio solicitud", "\n")
         elif event.getName() == "OK":
+            print("[", self.id, "]: recibi OK en t=", self.clock, "\n")
             print("[", self.id, "]: Entro a la seccion critica en t=", self.clock, " \n")
             dormir= random.randint(1,5)
             time.sleep(dormir)
